@@ -1,7 +1,7 @@
 {
   "name": "stackreel",
   "version": "2.0.0",
-  "description": "StackReel — turn a public website into an evidence-backed architecture map and a narrated MP4 explainer.",
+  "description": "StackReel \u2014 turn a public website into an evidence-backed architecture map and a narrated MP4 explainer.",
   "private": true,
   "type": "module",
   "workspaces": [
@@ -24,7 +24,8 @@
     "test": "npm --workspace server test && npm --workspace client test",
     "test:server": "npm --workspace server test",
     "test:client": "npm --workspace client test",
-    "test:e2e": "node scripts/e2e.mjs"
+    "test:e2e": "node scripts/e2e.mjs",
+    "screenshots": "node scripts/screenshots.mjs"
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
