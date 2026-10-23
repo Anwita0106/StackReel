@@ -400,4 +400,4 @@ stackreel/
 
 StackReel makes the same requests a visitor's browser would, once, and honours `robots.txt`. It never bypasses logins, paywalls, CAPTCHAs or access controls, never stores cookie values or request bodies, and never runs intrusive scans.
 
-MIT License.
+Made by Anwita Padhi
