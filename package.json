@@ -1,0 +1,34 @@
+{
+  "name": "stackreel",
+  "version": "2.0.0",
+  "description": "StackReel — turn a public website into an evidence-backed architecture map and a narrated MP4 explainer.",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "setup": "npm install && npm run setup:browser",
+    "setup:browser": "npx --workspace server playwright install chromium",
+    "dev": "concurrently --kill-others-on-fail -n api,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm --workspace server run dev",
+    "dev:client": "npm --workspace client run dev",
+    "build": "npm --workspace client run build",
+    "start": "cross-env NODE_ENV=production SERVE_CLIENT=true node server/src/index.js",
+    "doctor": "node server/scripts/doctor.js",
+    "lint": "npm --workspace client run lint && npm --workspace server run lint",
+    "test": "npm --workspace server test && npm --workspace client test",
+    "test:server": "npm --workspace server test",
+    "test:client": "npm --workspace client test",
+    "test:e2e": "node scripts/e2e.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0"
+  },
+  "license": "MIT"
+}

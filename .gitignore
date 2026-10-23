@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Builds
+client/dist/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Runtime data: projects, rendered videos, temporary render files
+server/.data/
+*.mp4
+*.webm
+e2e-artifacts/
+
+# Logs / OS / editors
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
