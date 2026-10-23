@@ -11,21 +11,6 @@ Nothing is simulated: no preset "analyses", no invented metrics, no fake render 
 </p>
 
 ---
-
-## Contents
-
-- [Screenshots](#screenshots)
-- [Quick start (Windows)](#quick-start-windows)
-- [System architecture](#system-architecture)
-- [Features](#features)
-- [Narration voices](#narration-voices)
-- [Configuration](#configuration)
-- [Sharing a public link](#sharing-a-public-link)
-- [Tests](#tests)
-- [Troubleshooting](#troubleshooting)
-- [Known limitations](#known-limitations)
-- [Project layout](#project-layout)
-
 ---
 
 ## Screenshots
