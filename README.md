@@ -4,7 +4,7 @@
 
 Paste a public URL. StackReel inspects what the site publicly reveals (headers, TLS, DNS, the rendered page and every network request, captured in a sandboxed browser), identifies technologies with deterministic signatures, and builds an architecture map in which **every component is labelled OBSERVED, INFERRED or UNKNOWN and linked to the evidence behind it**. It then writes a six-scene technical script from that map, narrates it, and renders a real, verified MP4 (H.264 video + AAC audio) with captions.
 
-Nothing is simulated: no preset "analyses", no invented metrics, no fake render success.
+Live demo-"https://stackreel-iivv.onrender.com"
 
 <p align="center">
   <img src="docs/screenshots/dashboard-dark.jpg" alt="StackReel dashboard (dark theme)" width="900">
